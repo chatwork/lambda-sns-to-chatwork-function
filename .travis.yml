@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '0.10'
+sudo: false
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
+script:
+- npm test
+- npm run archive
+deploy:
+  provider: releases
+  api_key:
+    secure: RFbei/wvyWwwZp+bgnjE69bLxL7vNQ8Ui8izlh83a2sP8e6kKCcHo4dH/AqW2RseK+kVqSyvR6MmYnRF2b+T0z8R2xR+wAHevKagpv7xNS17hvwY1Y4ilza7NQ/B9pKK2V0A2mw2+D4djSpCDoYmFvsmoK00k7PswUihrPERVXYXL6KoW42LbgUomAD3E8CzlZgaYM5VkcTXhfNw9JCXQvKNFTK347ssjMIcwcjjkyEDdxDhuCfnWU3LFAvWxJk6ljxr0L3Vm8Fa85lAcFZKjkpH7VWg8H+XbwMBaQwATRT6xvtSrZBMRO+bRLVg2ECuLkB4qCmmdlY188bbJ4EB1iQaGqCRCp96IhSGZBq8yyUpuT6Aon91eOIrRT0DUe7ys8BXiBDzsB5Cy/DJVDfMSwhhAlbC9jySBelmF7d70Gtfmok3oAUqRwBrwCTc5onIHZ2i8+r+BB1cTG9Flsq12PjWRGCkYh2busZywZv5B9ygD/qpY0Z8z6L8u7eS0SHZJ9zwLlOxsqAqAeLr6M0uQEqVGP+KexQhNOI36tZkBEaTpLRwgRBL5/VGIpUt4YznA0bgcJFuqZeBDFSnO8kWe1kso1zujQxxCzOpN0FkxRf7ZBLDiVxR58yQXUYqxjwkx35PWORZNDmp3o5pTb/E7wYuhC1FIE4OvrCS8oxkYic=
+  file: archive.zip
+  skip_cleanup: true
+  on:
+    repo: chatwork/lambda-sns-to-chatwork-function
+    branch: master
+    tags: true
