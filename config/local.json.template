@@ -1,0 +1,5 @@
+{
+  "token": "{{ process.env.CHATWORK_API_TOKEN }}",
+  "roomId": {{ process.env.CHATWORK_SEND_ROOM_ID }},
+  "template": "{{ process.env.CHATWORK_MESSAGE_TEMPLATE }}"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "lambda-sns-to-chatwork-function",
+  "version": "0.0.0",
+  "description": "Modern AWS Lambda project configuration.",
+  "author": "k-kinzal",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "start": "node tasks/run.js",
+    "test": "jshint --reporter=node_modules/jshint-stylish src/ && mocha test/*.spec.js",
+    "template": "swig render config/local.json.template > config/local.json",
+    "archive": "node tasks/archive.js"
+  },
+  "devDependencies": {
+    "glob": "^5.0.13",
+    "intelli-espower-loader": "^0.7.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "jszip": "^2.5.0",
+    "lambda-handler": "^0.3.0",
+    "mocha": "^2.2.5",
+    "power-assert": "^0.11.0",
+    "sinon": "^1.15.4",
+    "swig": "^1.4.2"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.33",
+    "config": "^1.12.0",
+    "simple-cw-node": "^0.1.4",
+    "underscore": "^1.8.3"
+  }
+}
