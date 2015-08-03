@@ -12,7 +12,7 @@
   "scripts": {
     "start": "node tasks/run.js",
     "test": "jshint --reporter=node_modules/jshint-stylish src/ && mocha test/*.spec.js",
-    "template": "swig render config/local.json.template > config/local.json",
+    "template": "swig render config/local.json.template --options ../../../tasks/swig.opts.json > config/local.json",
     "archive": "node tasks/archive.js"
   },
   "devDependencies": {
