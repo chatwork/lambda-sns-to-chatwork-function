@@ -16,7 +16,7 @@
     "archive": "node tasks/archive.js"
   },
   "devDependencies": {
-    "glob": "^5.0.13",
+    "glob": "^5.0.15",
     "intelli-espower-loader": "^0.7.0",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.0.1",
@@ -28,7 +28,7 @@
     "swig": "^1.4.2"
   },
   "dependencies": {
-    "bluebird": "^2.9.33",
+    "bluebird": "^2.10.2",
     "config": "^1.12.0",
     "simple-cw-node": "^0.1.4",
     "underscore": "^1.8.3"
