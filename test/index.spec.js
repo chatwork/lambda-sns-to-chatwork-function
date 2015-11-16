@@ -67,9 +67,9 @@ describe('Lambda entry point:', function() {
         {
           Sns: {
             MessageId: '95df01b4-ee98-5cb9-9903-4c221d41eb5e',
-            Message: '{"hoge": 1}',
+            Message: '{"hoge": 1}'
           }
-        },
+        }
       ]
     };
     config.util.extendDeep(config, {
@@ -93,9 +93,9 @@ describe('Lambda entry point:', function() {
         {
           Sns: {
             MessageId: '95df01b4-ee98-5cb9-9903-4c221d41eb5e',
-            Message: 'Hello World',
+            Message: 'Hello World'
           }
-        },
+        }
       ]
     };
     config.util.extendDeep(config, {

@@ -7,11 +7,11 @@
   "private": true,
   "main": "src/index.js",
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "start": "gulp run",
-    "lint": "eslint src test",
+    "lint": "eslint src",
     "test": "mocha test/*.spec.js",
     "archive": "gulp archive"
   },
