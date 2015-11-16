@@ -1,6 +1,6 @@
 {
   "name": "lambda-sns-to-chatwork-function",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Modern AWS Lambda project configuration.",
   "author": "k-kinzal",
   "license": "MIT",
