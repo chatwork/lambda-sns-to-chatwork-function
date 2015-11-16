@@ -6,9 +6,6 @@ sudo: false
 cache:
   directories:
   - node_modules
-branches:
-  only:
-  - master
 script:
 - npm run lint
 - npm test
@@ -17,8 +14,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: RFbei/wvyWwwZp+bgnjE69bLxL7vNQ8Ui8izlh83a2sP8e6kKCcHo4dH/AqW2RseK+kVqSyvR6MmYnRF2b+T0z8R2xR+wAHevKagpv7xNS17hvwY1Y4ilza7NQ/B9pKK2V0A2mw2+D4djSpCDoYmFvsmoK00k7PswUihrPERVXYXL6KoW42LbgUomAD3E8CzlZgaYM5VkcTXhfNw9JCXQvKNFTK347ssjMIcwcjjkyEDdxDhuCfnWU3LFAvWxJk6ljxr0L3Vm8Fa85lAcFZKjkpH7VWg8H+XbwMBaQwATRT6xvtSrZBMRO+bRLVg2ECuLkB4qCmmdlY188bbJ4EB1iQaGqCRCp96IhSGZBq8yyUpuT6Aon91eOIrRT0DUe7ys8BXiBDzsB5Cy/DJVDfMSwhhAlbC9jySBelmF7d70Gtfmok3oAUqRwBrwCTc5onIHZ2i8+r+BB1cTG9Flsq12PjWRGCkYh2busZywZv5B9ygD/qpY0Z8z6L8u7eS0SHZJ9zwLlOxsqAqAeLr6M0uQEqVGP+KexQhNOI36tZkBEaTpLRwgRBL5/VGIpUt4YznA0bgcJFuqZeBDFSnO8kWe1kso1zujQxxCzOpN0FkxRf7ZBLDiVxR58yQXUYqxjwkx35PWORZNDmp3o5pTb/E7wYuhC1FIE4OvrCS8oxkYic=
-  file: archive.zip
+    secure: k6ZS1QQ9ftMW0KPEnPNHZ0bfzlqFhiAySEC11HU9QYkBlMTcBC0gb9BlWYRUqH2DFB6igYRTJoZoCdlq00E8ikNI+LUgKNiyIKlG2y6+9tWbACfAXF3FQHzNzQqZF9AFIk7jvnM+q/MLpvk+tS3fYP4wo8Q1Hrn4ZO81wSmqE8m6w3dno1yf7Uc6XnTtO+12naqL+JePVd6lXB/znkExJtf4sj9Qbtg8w7S90UPyo4NhAnhwh0U2wNve+rtchIHbON78cX1rvAm1UCDK5JYrSoHrpwjA35Ea6PQngzfEvrcNHW1KsuqGFZzSxf1hMbruafSRAnBhQz+4p+gTxlggmB2wfhrsL1tS6DjQafgm2ni7gvHRDXIMgFtWUyADM9LF6t2MAW5kSYjtOo7Mir/QuCoMlV/V/STqGouEf55zds5mclU0qaYHQ+VySVAXJRVmy+R2RM4E5foGplRzfKiRxO/R0JHdmL7g4/pK4PirOaLC9iPP0vdszEcb1y+cukBUzrqJhAw8femvX6ITEzNvKNR0+PpJHcHyJKDx0yhJLqy6praX6s30yY8/GoDmq9bD2elKdSL0M73yTw/QnANtrC9Q85we3NPkJV90+77AFvmsJpUI1J887SPukqYlgJrrTrEjRT9wd+fCy7nzFaprnmfzMdToQNytnojjg86abqw=
+  file: dist/archive.zip
   skip_cleanup: true
   on:
     repo: chatwork/lambda-sns-to-chatwork-function
