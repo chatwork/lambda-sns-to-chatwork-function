@@ -12,19 +12,20 @@ Notify the SNS to chatwork.
 ## Get started
 
 ```
-export CHATWORK_API_TOKEN=xxxx
-export CHATWORK_SEND_ROOM_ID=[ChatWork Room ID]
-export CHATWORK_MESSAGE_TEMPLATE=[Notify Message]
 git clone https://github.com/chatwork/lambda-sns-to-chatwork-function
 cd lambda-sns-to-chatwork-function
+echo '{
+  "token": "[ChatWork API Token]",
+  "roomId": [ChatWork Room ID],
+  "template": "[Notify Message]"
+}' > config/local.json
 npm install
-npm run template
 npm start # Notify the example events
 ```
 
 ## Configuration
 
-You will generate `config/local.json`. When you run the `npm run template` to generate a `config/local.json` from the environment variable .
+You will generate `config/local.json`.
 
 
 | name | type | value |

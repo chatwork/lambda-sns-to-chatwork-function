@@ -1,3 +1,5 @@
 {
+  "token": "",
+  "roomId": 0,
   "template": "<%- Message %>"
 }

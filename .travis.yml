@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
+- '0.12'
 sudo: false
 cache:
   directories:
@@ -10,6 +11,7 @@ branches:
   - master
 script:
 - npm test
+before_deploy:
 - npm run archive
 deploy:
   provider: releases
